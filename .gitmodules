@@ -1,0 +1,6 @@
+[submodule "Extensions/ExampleMod"]
+	path = Extensions/ExampleMod
+	url = git@github.com:Delaunay/SatisfactoryExampleMod1.git
+[submodule "Extensions/SML"]
+	path = Extensions/SML
+	url = git@github.com:Delaunay/SML.git
