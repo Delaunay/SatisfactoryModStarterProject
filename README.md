@@ -29,8 +29,32 @@ easier to keep up to date.
 ## Use this repo as starter project
 
     git clone --recursive https://github.com/Delaunay/SatisfactoryModStarterProject
+    
+    # Setup UE4 & wwise
+    # Steps in Satisfactory doc
+
+## Create a new mod
+
+    # Create a new mod inside Extensions/ with Source and Content folder
+    # Create symlinks and update build files
+    python uproject.py --new-mod MyMod
+    
 
 ## Add the source of a mod
+
+    python uproject.py --clone-mod <mod-repo>
+    
+## Update a mod
+
+    cd Extensions/<mod-to-update>
+    git pull origin master
+    
+ 
+ 
+### Manual update
+
+    # Clone a mod into Extensions/
+    # Create symlinks and update build files
 
     # Add the repo to the project
     git submodule add <mod-repo> Extensions/<mod-name>
@@ -45,13 +69,7 @@ easier to keep up to date.
     notepad++ Source/FactoryGame.Target.cs
     notepad++ Source/FactoryGameEditor.Target.cs
     
-   
-## Update a mod
 
-    cd Extensions/<mod-to-update>
-    git pull origin master
-    
- 
 ---
 
 # SatisfactoryModLoader [![Build Status](https://ci.ficsit.app/job/SML2/job/master/badge/icon)](https://ci.ficsit.app/job/SML2/job/master/)
